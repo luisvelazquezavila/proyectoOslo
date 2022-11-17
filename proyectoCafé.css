@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cb{
+    color: #3c3c3b;
+}
+
+.cc{
+    color: #f5f0ed;
+}
+
+.cr{
+    color: #d03b40;
+}
+
+.paragraph{
+    font-weight: 400;
+}
+
+.title{
+    font-weight: 800;
+}
+
+h1,h2,p,a{
+    text-align: center;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(Imágenes/Fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.header__picture{
+    width: 100%;
+    height: 100%;
+}
+
+.header__nav{
+    margin-top: 30px;
+    width: 75%;
+    text-align: end;
+}
+
+.header__link{
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.header__texts{
+    width: 520px;
+    margin: 0 auto 80px;
+}
+
+.header__title, .section2__title{
+    font-size: 44px;
+}
+
+.línea{
+    margin: 40px auto;
+    width: 100px;
+    border: 1px solid #f5f0ed;
+}
+
+/* section */
+
+.section, .contacto{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section__element, .contacto__element{
+    padding: 160px 30px;
+    background: #d03b40;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__texts, .contacto__texts{
+    width: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.section__title, .contacto__title{
+    font-size: 28px;
+    margin-bottom: 20px;
+    width: 70%;
+}
+
+.section__element--color, .contacto__element--color{
+    background: #ded6c0;
+}
+
+/* section2 */
+
+.section2{
+    padding: 150px 30px;
+    background-image: url(Imágenes/Fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section2__texts{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2__paragraph{
+    margin-bottom: 70px;
+}
+
+.section2__cta{
+    width: 300px;
+    border: 1px solid #f5f0ed;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+/* section3 */
+
+.section3{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: #f5f0ed;
+    gap: 30px;
+}
+
+.section3__container{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3__icon{
+    width: 170px;
+    height: 170px;
+}
+
+.section3__picture{
+    height: 100%;
+    width: 100%;
+}
+
+.section3__texts{
+    width: 65%;
+}
+
+.section3__title{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.section3__texts p, .section3__texts h2{
+    text-align: left;
+}
+
+/* contacto */
+
+.contacto__cta{
+    width: 90%;
+    text-align: end;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    padding: 100px 0;
+    background: #241d1b;
+}
+
+.footer__paragraph{
+    text-align: start;
+    margin-left: 20px;
+}
+
+/* medias */
+
+@media screen and (max-width:1150px){
+
+    .section3{
+        padding: 50px 20px;
+        align-items: flex-start;
+    }
+
+    .section3__texts{
+        width: 100%;
+    }
+
+    .section3__icon{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .header{
+        align-content: flex-start;
+    }
+    
+    .header__nav{
+        width: 95%;
+        font-size: 13px;
+        align-self: flex-start;
+        margin: 15px 0 20px;
+    }
+
+    .section__title, .contacto__title{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    
+    .header{
+        padding: 10px 30px;
+    }
+
+    .header__logo{
+        width: 130px;
+        height: 40px;
+    }
+
+    .header__nav{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .header__link{
+        margin-left: 15px;
+    }
+
+    .header__title, .section2__title{
+        font-size: 2rem;
+    }
+
+    .section__element, .contacto__element{
+        width: 100%;
+        padding: 100px 30px;
+    }
+
+    .section2{
+        padding: 80px 30px;
+    }
+
+    .section3__container{
+        width: 100%;
+    }
+
+    .section3__texts{
+        width: 100%;
+    }
+
+    .section3__title{
+        font-size: 1.4rem;
+    }
+
+    .footer{
+        padding: 50px 0;
+    }
+}
+
+@media screen and (max-width:530px){
+
+    .header__link{
+        font-size: 9px;
+        margin-left: 10px;
+    }
+}
